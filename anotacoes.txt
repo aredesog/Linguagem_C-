@@ -1,0 +1,6 @@
+O arquivo hpp e um alternativo do.h, funciona como um headfile para a linguagem cpp.
+Para nao haver conflito na declarao das variaveis, se usa o extern para mostrar que essa variavel ja foi declarada em algum outro lugar externo ao aquivo an qual ela foi colocada
+Tudo que comeca com # e uma pre instrucao para o compilador, "Vai la pega tudo qu tem dentro e ultiliza"., uma instrucao de pre processamento(Basicamente copia e cola o que tem de uma arquivo para dentro do outro)
+#pragma one, se em algum outro lugar esse arquivo ja foi incluido nao ha necessidade de inclui-lo novamente
+
+Os arquivo .hpp permitem a criacao de um arquivo objeto .o, o qual pode ser facilmente realizado atravez do g++ -c *.cpp, criando arquivos .o, que podem ser juntos em um unico executavel, g++ *.o -o.cpp
