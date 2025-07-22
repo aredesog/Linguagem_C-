@@ -4,3 +4,6 @@ Tudo que comeca com # e uma pre instrucao para o compilador, "Vai la pega tudo q
 #pragma one, se em algum outro lugar esse arquivo ja foi incluido nao ha necessidade de inclui-lo novamente
 
 Os arquivo .hpp permitem a criacao de um arquivo objeto .o, o qual pode ser facilmente realizado atravez do g++ -c *.cpp, criando arquivos .o, que podem ser juntos em um unico executavel, g++ *.o -o.cpp
+
+O uso do Visual Code, esta para a facilidade da compilacao de varios arquivos em um local so,
+ entretanto passei por probelmas em sua instalcao
