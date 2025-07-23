@@ -5,5 +5,22 @@ Tudo que comeca com # e uma pre instrucao para o compilador, "Vai la pega tudo q
 
 Os arquivo .hpp permitem a criacao de um arquivo objeto .o, o qual pode ser facilmente realizado atravez do g++ -c *.cpp, criando arquivos .o, que podem ser juntos em um unico executavel, g++ *.o -o.cpp
 
-O uso do Visual Code, esta para a facilidade da compilacao de varios arquivos em um local so,
- entretanto passei por probelmas em sua instalcao
+O uso do Visual Code, ou uma IDE, facilita na compilacao dos arquivos, ja que ele cria 
+um executavel com a quantidade de bits que e necessaria para sua execucao.
+
+Inline -> Copia todas as instrucoes e cola no local da funcao, por ser uma funcao simples, entretanto, a funcao
+    inline precisa estar no arquivo de cabecario.
+
+    O uso de variaveis globais pode ser ruim, pois nao tem como saber em quais locais ela esta sendo alterada
+    em outras funcoes.
+
+    No C++, o uso de referncias (&), facilita pro uso de ponteiros em C++.
+
+    O const define uma promessa de que o valor setador nao sera alterado em local nenhum, lembrar qde sempre 
+    declara no .h tambem.
+    Em caso de funcoe em Bool, nao tem como se ultilizar o const, ja que o valor retornado so pode ser true ou false, portanto nao tem como definir nenhuma constante nele.
+
+    static -> Diz que essa variavel so existe nesse arquivo
+
+    new int -> funciona como o malloc(size(int)) da lingugem C / retorna um endereco de memoria da heap,
+        para liberar se usa o operador delete i;
